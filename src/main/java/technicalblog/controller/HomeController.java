@@ -16,6 +16,7 @@ import technicalblog.service.PostService;
 public class HomeController {
 	
 	public HomeController() {
+
 		System.out.println("*** HomeController ***");
     }
 
