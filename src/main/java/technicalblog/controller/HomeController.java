@@ -1,6 +1,7 @@
 package technicalblog.controller;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,7 +27,7 @@ public class HomeController {
 	@RequestMapping("/")
 	public String getAllPosts(Model model) {
 		// TODO Auto-generated method stub
-		ArrayList<Post> posts = postservice.getAllPosts();
+		List<Post> posts = postservice.getAllPosts();
 		model.addAttribute("posts", posts);
 		return "index";
 	}
